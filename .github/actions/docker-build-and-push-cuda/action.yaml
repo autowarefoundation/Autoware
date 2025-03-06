@@ -126,7 +126,7 @@ runs:
     - name: Build and Push to GitHub Container Registry
       uses: docker/bake-action@v5
       with:
-        push: true
+        push: false
         files: |
           docker/docker-bake-cuda.hcl
           ${{ steps.meta-universe-sensing-perception-devel-cuda.outputs.bake-file }}
